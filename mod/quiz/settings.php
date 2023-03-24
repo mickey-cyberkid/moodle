@@ -28,7 +28,7 @@ defined('MOODLE_INTERNAL') || die();
 
 require_once($CFG->dirroot . '/mod/quiz/lib.php');
 
-// First get a list of quiz reports with there own settings pages. If there none,
+// First get a list of quiz reports with their own settings pages. If there is none,
 // we use a simpler overall menu structure.
 $reports = core_component::get_plugin_list_with_file('quiz', 'settings.php', false);
 $reportsbyname = [];
@@ -38,7 +38,7 @@ foreach ($reports as $report => $reportdir) {
 }
 core_collator::ksort($reportsbyname);
 
-// First get a list of quiz reports with there own settings pages. If there none,
+// First get a list of quiz reports with their own settings pages. If there is none,
 // we use a simpler overall menu structure.
 $rules = core_component::get_plugin_list_with_file('quizaccess', 'settings.php', false);
 $rulesbyname = [];
